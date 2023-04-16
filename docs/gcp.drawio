@@ -1,0 +1,243 @@
+<mxfile host="app.diagrams.net" modified="2023-04-15T14:27:00.223Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="UhEy5d7vLoA68EGBLmPk" version="21.1.8" type="device">
+  <diagram name="Page-1" id="m-9o20i_-PmIpjad_zd5">
+    <mxGraphModel dx="2637" dy="880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jizd02WMZwkqyDSrAhcb-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-1" target="jizd02WMZwkqyDSrAhcb-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-490" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-19" value="&lt;font style=&quot;border-color: var(--border-color); background-color: rgb(251, 251, 251);&quot;&gt;OriginalText,&lt;br style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;&lt;/font&gt;FromLanguage,&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); text-align: left;&quot;&gt;ToLanguage&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-18">
+          <mxGeometry x="0.4896" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-1" target="jizd02WMZwkqyDSrAhcb-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-510" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-45" value="PingPongID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-43">
+          <mxGeometry x="0.0723" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-1" target="jizd02WMZwkqyDSrAhcb-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-310" y="660" />
+              <mxPoint x="-310" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-52" value="PingPongID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-51">
+          <mxGeometry x="0.0845" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-1" value="&lt;b&gt;Some Frontend Framework&lt;/b&gt;&lt;br&gt;Frontend&lt;br&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Allow creating new Ping Pongs&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Allow resuming Ping Pongs&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Keep track of ID (Preferably using URL)&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Display current Ping Pong&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Status&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Original Text&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Ping Side Text&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Pong Side Text&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Refresh data (async request) every 0.5s if status is &quot;Running&quot;&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="390" width="260" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-2" target="jizd02WMZwkqyDSrAhcb-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-10" value="&lt;b&gt;Create Record&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-6">
+          <mxGeometry x="0.2981" y="-1" relative="1" as="geometry">
+            <mxPoint x="36" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-2" target="jizd02WMZwkqyDSrAhcb-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-34" value="&lt;b&gt;Invoke&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-8">
+          <mxGeometry x="-0.1803" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-2" value="&lt;b&gt;Cloud Function (?)&lt;br&gt;&lt;/b&gt;Create PingPong&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;Check for existing identical record&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;Validate Language Codes&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Create record in firestore with status &quot;Paused&quot;&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Return ID&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Start cloud run job&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-7" target="jizd02WMZwkqyDSrAhcb-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-11" value="&lt;b&gt;Read/Write&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-9">
+          <mxGeometry x="-0.281" y="2" relative="1" as="geometry">
+            <mxPoint x="10" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-7" value="&lt;b&gt;Cloud Run Job&lt;/b&gt;&lt;br&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Read ID&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Make sure status is &quot;Paused&quot;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Change Status to &quot;Running&quot;&lt;br&gt;(take care of nosql consistency!)&lt;br&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Take last element of &quot;Translations&quot; and other params&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Run translation code generating a list&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Append list to DB record&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Detect Loops and mark in status &quot;Looped&quot;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Stop after N iterations and mark status &quot;Paused&quot;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="360" width="220" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" target="jizd02WMZwkqyDSrAhcb-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="480" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="580" y="480" />
+              <mxPoint x="580" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-14" target="jizd02WMZwkqyDSrAhcb-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="860" />
+              <mxPoint x="250" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-33" value="&lt;b&gt;Read&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-31">
+          <mxGeometry x="0.3603" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-14" target="jizd02WMZwkqyDSrAhcb-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="718" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-41" value="&lt;b&gt;Read&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-40">
+          <mxGeometry x="0.2081" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-14" value="Firestore" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="620" y="425" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-15" target="jizd02WMZwkqyDSrAhcb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-460" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-180" y="330" />
+              <mxPoint x="-460" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-22" value="PingPongID/FAIL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-21">
+          <mxGeometry x="0.1173" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-15" value="&lt;b&gt;Create Request&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); text-align: left; background-color: rgb(255, 255, 255); font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="235" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.002;entryY=0.412;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-16" target="jizd02WMZwkqyDSrAhcb-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-16" target="jizd02WMZwkqyDSrAhcb-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-100" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-54" value="OK/FAIL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-53">
+          <mxGeometry x="0.0109" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-16" value="&lt;b&gt;Resume Request&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); font-size: 11px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="620" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-17" target="jizd02WMZwkqyDSrAhcb-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-90" y="780" />
+              <mxPoint x="-435" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-46" value="Record (JSON)/FAIL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-44">
+          <mxGeometry x="0.0434" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.443;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=blockThin;endFill=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-17" target="jizd02WMZwkqyDSrAhcb-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-17" value="&lt;b&gt;Read Request&lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color); font-size: 11px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="810" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-24" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;{&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;ID&quot;:&quot;1234-abcd-...&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;OriginalText&quot;: &quot;Hello World!&quot;,&lt;br&gt;&amp;nbsp; &quot;FromLanguage&quot;: &quot;Eng_Latn&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;ToLanguage&quot;: &quot;Pol_Latn&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;Status&quot;: &quot;Looped&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;Translations&quot;: [&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Hello World!&quot;,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Witaj Świecie!&quot;,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Hello World!&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; ]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="360" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-27" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;{&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;ID&quot;:&quot;1234-abcd-...&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;OriginalText&quot;: &quot;Hello World!&quot;,&lt;br&gt;&amp;nbsp; &quot;FromLanguage&quot;: &quot;Eng_Latn&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;ToLanguage&quot;: &quot;Pol_Latn&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;Status&quot;: &quot;Paused&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;Translations&quot;: [&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Hello World!&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;&amp;nbsp; ]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="150" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-29" value="&lt;b&gt;Cloud Function / Firebase (?)&lt;br&gt;&lt;/b&gt;Read&amp;nbsp;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;Take ID&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Read record from Firestore and return it&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Return fail if record doesn&#39;t exist&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="775" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.144;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-30" target="jizd02WMZwkqyDSrAhcb-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="332" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-39" value="&lt;b&gt;Invoke&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jizd02WMZwkqyDSrAhcb-38">
+          <mxGeometry x="-0.139" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-30" value="&lt;b&gt;Cloud Function (?)&lt;br&gt;&lt;/b&gt;Resume Ping Pong&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;Take ID&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Read record from Firestore (take care of&amp;nbsp;nosql consistency!)&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Check if status is &quot;Paused&quot;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Return OK or FAIL&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="jizd02WMZwkqyDSrAhcb-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-260" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="970" />
+              <mxPoint x="-260" y="970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-35" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;{&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;ID&quot;:&quot;1234-abcd-...&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;OriginalText&quot;: &quot;Hello World!&quot;,&lt;br&gt;&amp;nbsp; &quot;FromLanguage&quot;: &quot;Eng_Latn&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;ToLanguage&quot;: &quot;Pol_Latn&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;Status&quot;: &quot;Paused&quot;,&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &quot;Translations&quot;: [&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Hello World!&quot;,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Witaj, świecie!&quot;,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; &amp;nbsp; &quot;Hello, world!&quot;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;&amp;nbsp; ]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;}&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="575" width="260" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="480" as="sourcePoint" />
+            <mxPoint x="710" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="480" />
+              <mxPoint x="580" y="610" />
+              <mxPoint x="710" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jizd02WMZwkqyDSrAhcb-37" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Example Records&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="110" width="260" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

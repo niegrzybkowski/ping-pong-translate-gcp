@@ -5,8 +5,9 @@ WORKDIR /app
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu --no-cache-dir
 RUN pip3 install 'transformers[torch]' sentencepiece --no-cache-dir
 
-COPY . .
-
+COPY dry-run.py .
 RUN python3 dry-run.py
 
-CMD [ "python3" ]
+COPY . .
+
+ENTRYPOINT [ "python3", "translator.py"]

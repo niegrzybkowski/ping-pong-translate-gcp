@@ -2,7 +2,7 @@ from transformers import NllbTokenizer, AutoModelForSeq2SeqLM
 
 MAX_TRANSLATION_LENGTH = 30
 
-MODEL = AutoModelForSeq2SeqLM.from_pretrained("facebook/nllb-200-distilled-600M")
+MODEL = AutoModelForSeq2SeqLM.from_pretrained("/model")
 
 class Translator:
     def __init__(self, from_language, to_language):

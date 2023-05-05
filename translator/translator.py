@@ -1,6 +1,7 @@
 from transformers import NllbTokenizer, AutoModelForSeq2SeqLM
+import os
 
-MAX_TRANSLATION_LENGTH = 30
+MAX_TRANSLATION_LENGTH = os.environ.get("MAX_TRANSLATION_LENGTH", 250)
 
 MODEL = AutoModelForSeq2SeqLM.from_pretrained("/model")
 
@@ -33,7 +34,7 @@ class PingPong:
 
         self.ping_translator = Translator(from_language, to_language)
         self.pong_translator = Translator(to_language, from_language)
-    
+
     def run(self):
         if self.is_looped:
             return
@@ -45,6 +46,25 @@ class PingPong:
             
             self.translation_list.append(pong_text)
             self.translation_list.append(ping_text_new)
+
+            if ping_text == ping_text_new:
+                self.is_looped = True
+                break
+            else:
+                ping_text = ping_text_new
+    
+    def run_generator(self):
+        if self.is_looped:
+            return
+        
+        ping_text = self.translation_list[-1]
+        for _ in range(self.number_repeats):
+            pong_text = self.ping_translator.translate(ping_text)
+            self.translation_list.append(pong_text)
+            yield pong_text
+            ping_text_new = self.pong_translator.translate(pong_text)
+            self.translation_list.append(ping_text_new)
+            yield ping_text_new
 
             if ping_text == ping_text_new:
                 self.is_looped = True

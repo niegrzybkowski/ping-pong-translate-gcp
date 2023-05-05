@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=980px, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <script>
+        const languageLocalization = {
+            "pol_Latn": "Polish",
+            "eng_Latn": "English",
+            "deu_Latn": "German",
+            "fra_Latn": "French",
+            "zho_Hans": "Chinese (Simplified)",
+            "jpn_Jpan": "Japanese"
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js';
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyDvyBN8QkCcFSO2Bq2vttCmVP3gSnc8NSo",
+          authDomain: "ping-pong-translate.firebaseapp.com",
+          projectId: "ping-pong-translate",
+          storageBucket: "ping-pong-translate.appspot.com",
+          messagingSenderId: "369252143645",
+          appId: "1:369252143645:web:0878891b2e0c9aee3bacf4",
+          measurementId: "G-9D0J0RPY3G"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const documentId = location.pathname.split("/")[2];
+        const collectionName = "ping-pong-translations";
+
+        const documentRef = doc(db, collectionName, documentId);
+
+        const docSnap = await getDoc(documentRef);
+        
+        const status = document.getElementById("Status")
+        const fromLanguage = document.getElementById("FromLanguage");
+        const toLanguage = document.getElementById("ToLanguage");
+        const originalText = document.getElementById("OriginalText");
+        const bubbleContainer = document.getElementById("Bubbles")
+        const originalLanguageBubbleTemplate = document.getElementById("TemplateOriginal").content.firstElementChild.cloneNode(true)
+        const secondaryLanguageBubbleTemplate = document.getElementById("TemplateSecondary").content.firstElementChild.cloneNode(true)
+
+        const renderConstants = (data) => {
+            status.innerText = data.Status;
+            fromLanguage.innerText = languageLocalization[data.FromLanguage];
+            toLanguage.innerText = languageLocalization[data.ToLanguage];
+            originalText.innerText = data.OriginalText;
+        };
+
+        const renderBubble = (i, textToRender) => {
+            const template = i % 2 == 0 ? originalLanguageBubbleTemplate : secondaryLanguageBubbleTemplate;
+            const bubble = template.cloneNode(true);
+            bubble.id = "Bubble" + i;
+            bubble.innerText = textToRender;
+            bubbleContainer.appendChild(bubble)
+        };
+
+        const renderBubbles = (data) => {
+            const renderedElements= bubbleContainer.getElementsByTagName("div");
+            const actualElements = data.Translations
+            if (actualElements === undefined) {
+                // nothing to render
+                return
+            }
+            if (actualElements.length == renderedElements.length) {
+                // everything is already rendered
+                return
+            }
+            if (actualElements.length < renderedElements.length) {
+                console.error("There are more elements rendered than there should be, this is probably a problem");
+                return
+            }
+
+            for (let i = renderedElements.length; i < actualElements.length; i++) {
+                renderBubble(i, actualElements[i]);
+            }
+        };
+
+        const fetchRender = () => {
+            if (!docSnap.exists()) {
+                console.log("No such document!");
+                status.innerText = "Error";
+                return false;
+            } 
+            const docData = docSnap.data();
+            console.log("Document data:", docData);
+            renderConstants(docData);
+            renderBubbles(docData);
+        };
+
+        fetchRender();
+
+        document.getElementById("Reload").onclick = fetchRender
+        document.getElementById("RequestMore").onclick = fetchRender
+        
+      </script>
+</head>
+<body class="bg-sky-800 text-slate-50 items-center min-w-fit">
+<div id="container" class="mx-auto max-w-5xl p-8">
+    <!--Header-->
+    <div class="mb-8 flex flex-col text-center justify-center items-center">
+        <div class="font-extrabold text-5xl mt-8 mb-2">
+            Ping Pong Translate GCP
+        </div>
+        <div class="text-2xl items-center">
+            Translate back and forth between two languages
+        </div>
+        <div class="text-1xl text-slate-300">
+            By Kacper Grzymkowski and Jakub Fołtyn
+        </div>
+    </div>
+    <div class="m-4 p-4 flex flex-wrap flex-col rounded-lg bg-sky-600 min-w-fit min-h-fit max-h-fit">
+        <div>
+            <a class="font-bold no-underline hover:underline" href="../..">🡄 Go back</a>
+        </div>
+        <div class="m-2 flex gap-4 items-stretch place-content-center min-w-fit">
+            <div class="text-left w-48 bg-sky-500 rounded p-2">
+                <p class="font-bold">Status:</p>
+                <p id="Status">Loading...</p>
+            </div>
+            <div class="text-right w-48 bg-sky-500 rounded p-2 flex justify-around">
+                <button id="Reload" class="m-2 p-2 bg-green-500 rounded hover:bg-green-700">Reload</button>
+                <button id="RequestMore" class="m-2 p-2 bg-green-500 rounded hover:bg-green-700">Request More</button>
+            </div>
+        </div>
+        <!--Lang display-->
+        <div class="m-2 flex gap-4 items-stretch place-content-center min-w-full">
+            <div class="text-left w-48 bg-blue-500 rounded p-2">
+                <p class="font-bold">Translated language:</p>
+                <p id="ToLanguage">Loading...</p>
+            </div>
+            <div class="text-right w-48 bg-rose-500 rounded p-2">
+                <p class="font-bold">Prompt language:</p>
+                <p id="FromLanguage">Loading...</p>
+            </div>
+        </div>
+        <!--Bubbles-->
+        <div id="Bubbles" class="self-center flex flex-col h-fit w-5/6">
+            <div class="text-right self-end break-words p-2 my-2 mr-8 w-2/3 max-w-sm bg-rose-500 rounded basis-1 grow-0">
+                <p class="font-bold">Prompt:</p>
+                <p id="OriginalText">Loading...</p>
+            </div>
+            <template id="TemplateSecondary">
+                <div class="text-left p-2 my-2 w-2/3 max-w-sm bg-blue-500 h-fit rounded basis-1 grow-0 shrink">
+                    Cześć, świat!
+                </div>
+            </template>
+            <template id="TemplateOriginal">
+                <div class="text-right self-end p-2 my-2 w-2/3 max-w-sm h-fit max-h-fit bg-rose-500 rounded text-right basis-1 grow-0 shrink">
+                    This app allows uploading phrases from different languages. The phrase is then translated by a machine learning model into another language, and then the process is repeated multiple times (in a “ping pong” manner) translating the phrase from source language to target language and back. In the end the user can view how the phrase was distorted by multiple translations.
+                </div>
+            </template>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

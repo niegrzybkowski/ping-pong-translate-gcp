@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js';
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyDvyBN8QkCcFSO2Bq2vttCmVP3gSnc8NSo",
+          authDomain: "ping-pong-translate.firebaseapp.com",
+          projectId: "ping-pong-translate",
+          storageBucket: "ping-pong-translate.appspot.com",
+          messagingSenderId: "369252143645",
+          appId: "1:369252143645:web:0878891b2e0c9aee3bacf4",
+          measurementId: "G-9D0J0RPY3G"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
 </head>
-<body class="bg-sky-800 text-slate-50 items-center">
+<body class="bg-sky-800 text-slate-50 items-center min-w-fit">
     <div class="container min-w-fit mx-auto max-w-4xl py-8 px-8">
         <!--Header-->
         <div class="mb-8 flex flex-col text-center justify-center items-center">
@@ -15,13 +32,13 @@
                 Ping Pong Translate GCP
             </div>
             <div class="text-2xl items-center">
-                Translate between back and forth between two languages
+                Translate back and forth between two languages
             </div>
             <div class="text-1xl text-slate-300">
                 By Kacper Grzymkowski and Jakub Fołtyn
             </div>
         </div>
-        <!--Bubbles-->
+        <!-- 
         <div class="m-4 p-4 flex flex-col rounded-lg bg-sky-700">
             <div class="text-right self-end break-words p-2 my-2 mr-8 w-1/3 max-w-sm bg-rose-500 rounded">
                 Hello world!
@@ -32,7 +49,7 @@
             <div id="aaa" class="text-right self-end p-2 my-2 w-1/3 max-w-sm bg-red-500 rounded text-right">
                 Hi, world!
             </div>
-        </div>
+        </div> -->
         <form>
         <div class="m-4 p-4 flex flex-wrap flex-col rounded-lg bg-sky-600">
             <!--Lang chooser-->
@@ -40,8 +57,8 @@
                 Serve a ping pong ball:
             </div>
             <div class="m-2 flex gap-4 items-stretch place-content-center min-w-full">
-                <div class="text-left w-64 bg-blue-500 rounded p-2">
-                    <p class="font-bold">Secondary language:</p>
+                <div class="text-left w-48 bg-blue-500 rounded p-2">
+                    <p class="font-bold">Translated language:</p>
                     <select class="p-2 hover:bg-blue-600 rounded bg-blue-700" name="cars" id="cars">
                         <option value="pol_Latn">Polish</option>
                         <option value="eng_Latn">English</option>
@@ -51,8 +68,8 @@
                         <option value="jpn_Jpan">Japanese</option>
                     </select>
                 </div>
-                <div class="text-right w-64 rounded bg-rose-500 p-2">
-                    <p class="font-bold">Original language:</p>
+                <div class="text-right w-48 rounded bg-rose-500 p-2">
+                    <p class="font-bold">Prompt language:</p>
                     <select class="p-2 hover:bg-rose-600 rounded bg-rose-700" name="cars" id="cars">
                         <option value="eng_Latn">English</option>
                         <option value="pol_Latn">Polish</option>
@@ -65,12 +82,12 @@
             </div>
             <div class="width-full m-4 p-4 flex flex-col">
                 <div class="text-right min-w-fit self-end break-words p-2 my-2 mr-8 w-1/3 max-w-sm bg-rose-500 rounded">
-                    <p class="font-bold">Original text:</p>
+                    <p class="font-bold">Prompt:</p>
                     <textarea required class="p-2 hover:bg-rose-600 rounded bg-rose-700" name="OriginalText" cols="40" rows="5"></textarea>
                 </div>
             </div>
             <div class="self-end mr-8">
-                <input class="hover:bg-blue-500 p-2 rounded bg-blue-600 font-bold" type="submit" value="Go! 🡆">
+                <input class="hover:bg-blue-500 p-2 rounded bg-blue-600 font-bold" type="submit" value="Serve! 🡆">
             </div>
         </div>
         </form>

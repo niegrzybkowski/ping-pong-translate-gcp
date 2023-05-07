@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=980px, initial-scale=1.0">
-    <title>Document</title>
     
 
     <script>
@@ -88,7 +87,8 @@
             }
         };
 
-        const fetchRender = () => {
+        const fetchRender = async () => {
+            const docSnap = await getDoc(documentRef);
             if (!docSnap.exists()) {
                 console.log("No such document!");
                 status.innerText = "Error";
@@ -102,11 +102,14 @@
 
         fetchRender();
 
-        document.getElementById("Reload").onclick = fetchRender;
+        document.getElementById("Reload").onclick = () => {
+            status.innerText = "Reloading";
+            setTimeout(fetchRender, 100);
+        };
         document.getElementById("RequestMore").onclick = () => {
             $.post(
                 location.protocol + "//" + location.host + "/api/resume-pp",
-                documentId,
+                "id="+documentId,
                 (x) => {console.log(x); fetchRender()}
                 )
         };

@@ -112,9 +112,16 @@
         document.getElementById("RequestMore").onclick = () => {
             $.post(
                 location.protocol + "//" + location.host + "/api/resume-pp",
-                "id="+documentId,
-                (x) => {console.log(x); fetchRender()}
-                )
+                "id="+documentId
+            ).fail((data) => {
+                status.innerText = "Unable to request more";
+                console.log(data);
+                setTimeout(fetchRender, 1000);
+            }).done((data) => {
+                status.innerText = "Successfully requested more";
+                console.log(data);
+                setTimeout(fetchRender, 1000);
+            })
         };
         
       </script>

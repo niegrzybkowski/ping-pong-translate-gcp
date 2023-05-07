@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=980px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping Pong Translate</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏓</text></svg>">
 
@@ -119,41 +119,41 @@
         
       </script>
 </head>
-<body class="bg-sky-800 text-slate-50 items-center min-w-fit">
-<div id="container" class="mx-auto max-w-5xl p-8">
+<body class="bg-sky-800 text-slate-50 w-full">
+<div id="container" class="mx-auto min-w-full sm:p-8 flex flex-col align-center">
     <!--Header-->
-    <div class="mb-8 flex flex-col text-center justify-center items-center">
+    <div class="mb-8 p-1 min-w-full text-center">
         <div class="font-extrabold text-5xl mt-8 mb-2">
             Ping Pong Translate GCP
         </div>
-        <div class="text-2xl items-center">
+        <div class="text-2xl">
             Translate back and forth between two languages
         </div>
         <div class="text-1xl text-slate-300">
             By Kacper Grzymkowski and Jakub Fołtyn
         </div>
     </div>
-    <div class="m-4 p-4 flex flex-wrap flex-col rounded-lg bg-sky-600 min-w-fit min-h-fit max-h-fit">
+    <div class="sm:m-4 sm:p-4 p-1 flex flex-wrap flex-col rounded-lg bg-sky-600 w-full max-w-3xl self-center min-h-fit max-h-fit">
         <div>
-            <a class="font-bold no-underline hover:underline" href="../..">🡄 Go back</a>
+            <a class="font-bold no-underline hover:underline" href="../..">← Go back</a>
         </div>
         <div class="m-2 flex gap-4 items-stretch place-content-center min-w-fit">
-            <div class="text-left w-48 bg-sky-500 rounded p-2">
+            <div class="text-left sm:w-48 bg-sky-500 rounded p-2">
                 <p class="font-bold">Status:</p>
                 <p id="Status">Loading...</p>
             </div>
-            <div class="text-right w-48 bg-sky-500 rounded p-2 flex justify-around">
+            <div class="text-right sm:w-48 bg-sky-500 rounded p-2 flex justify-around">
                 <button id="Reload" class="m-2 p-2 bg-green-500 rounded hover:bg-green-700">Reload</button>
                 <button id="RequestMore" class="m-2 p-2 bg-green-500 rounded hover:bg-green-700">Request More</button>
             </div>
         </div>
         <!--Lang display-->
-        <div class="m-2 flex gap-4 items-stretch place-content-center min-w-full">
-            <div class="text-left w-48 bg-blue-500 rounded p-2">
+        <div class="sm:m-2 flex gap-4 items-stretch place-content-center min-w-full">
+            <div class="text-left sm:w-48 bg-blue-500 rounded p-2">
                 <p class="font-bold">Translated language:</p>
                 <p id="ToLanguage">Loading...</p>
             </div>
-            <div class="text-right w-48 bg-rose-500 rounded p-2">
+            <div class="text-right sm:w-48 bg-rose-500 rounded p-2">
                 <p class="font-bold">Prompt language:</p>
                 <p id="FromLanguage">Loading...</p>
             </div>

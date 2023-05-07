@@ -26,9 +26,9 @@
       </script>
 </head>
 <body class="bg-sky-800 text-slate-50 items-center min-w-fit">
-    <div class="container min-w-fit mx-auto max-w-4xl py-8 px-8">
+    <div class="container min-w-fit mx-auto max-w-4xl py-8 sm:px-8">
         <!--Header-->
-        <div class="mb-8 flex flex-col text-center justify-center items-center">
+        <div class="sm:mb-8 flex flex-col text-center justify-center items-center">
             <div class="font-extrabold text-5xl mt-8 mb-2">
                 Ping Pong Translate GCP
             </div>
@@ -39,28 +39,16 @@
                 By Kacper Grzymkowski and Jakub Fołtyn
             </div>
         </div>
-        <!-- 
-        <div class="m-4 p-4 flex flex-col rounded-lg bg-sky-700">
-            <div class="text-right self-end break-words p-2 my-2 mr-8 w-1/3 max-w-sm bg-rose-500 rounded">
-                Hello world!
-            </div>
-            <div class="text-left p-2 my-2 w-1/3 max-w-sm bg-blue-500 rounded">
-                Cześć, świat!
-            </div>
-            <div id="aaa" class="text-right self-end p-2 my-2 w-1/3 max-w-sm bg-red-500 rounded text-right">
-                Hi, world!
-            </div>
-        </div> -->
         <form action="api/initialize-pp" id="formpp" method="POST">
-        <div class="m-4 p-4 flex flex-wrap flex-col rounded-lg bg-sky-600">
+        <div class="sm:m-4 py-4 sm:px-4 flex flex-wrap flex-col rounded-lg bg-sky-600">
             <!--Lang chooser-->
             <div class="font-bold text-2xl text-center">
                 Serve a ping pong ball:
             </div>
-            <div class="m-2 flex gap-4 items-stretch place-content-center min-w-full">
-                <div class="text-left w-48 bg-blue-500 rounded p-2">
+            <div class="sm:m-2 flex gap-4 items-stretch place-content-center min-w-full">
+                <div class="text-left min-w-fit w-32 bg-blue-500 rounded p-2">
                     <p class="font-bold">Translated language:</p>
-                    <select class="p-2 hover:bg-blue-600 rounded bg-blue-700" name="ln_tra" id="ln_tra">
+                    <select class="sm:p-2 p-0.5 text-sm  hover:bg-blue-600 rounded bg-blue-700" name="ln_tra" id="ln_tra">
                         <option value="pol_Latn">Polish</option>
                         <option value="eng_Latn">English</option>
                         <option value="deu_Latn">German</option>
@@ -69,9 +57,9 @@
                         <option value="jpn_Jpan">Japanese</option>
                     </select>
                 </div>
-                <div class="text-right w-48 rounded bg-rose-500 p-2">
+                <div class="text-right min-w-fit w-32 rounded bg-rose-500 p-2">
                     <p class="font-bold">Prompt language:</p>
-                    <select class="p-2 hover:bg-rose-600 rounded bg-rose-700" name="ln_pro" id="ln_pro">
+                    <select class="sm:p-2 p-0.5 text-sm  hover:bg-rose-600 rounded bg-rose-700" name="ln_pro" id="ln_pro">
                         <option value="eng_Latn">English</option>
                         <option value="pol_Latn">Polish</option>
                         <option value="deu_Latn">German</option>
@@ -81,14 +69,14 @@
                     </select>
                 </div>
             </div>
-            <div class="width-full m-4 p-4 flex flex-col">
-                <div class="text-right min-w-fit self-end break-words p-2 my-2 mr-8 w-1/3 max-w-sm bg-rose-500 rounded">
+            <div class="width-full sm:m-4 flex flex-col">
+                <div class="text-right self-end break-words p-1 sm:p-2 my-2 mr-8 w-2/3 max-w-sm bg-rose-500 rounded">
                     <p class="font-bold">Prompt:</p>
-                    <textarea required class="p-2 hover:bg-rose-600 rounded bg-rose-700" name="OriginalText" cols="40" rows="5" maxlength="250"></textarea>
+                    <textarea required class="p-2 hover:bg-rose-600 min-w-full rounded bg-rose-700" name="OriginalText" rows="5" maxlength="250"></textarea>
                 </div>
             </div>
             <div class="self-end mr-8">
-                <input class="hover:bg-blue-500 p-2 rounded bg-blue-600 font-bold" type="submit" value="Serve! 🡆">
+                <input class="hover:bg-blue-500 p-2 rounded  bg-blue-600 font-bold" type="submit" value="Serve! →">
             </div>
         </div>
         </form>

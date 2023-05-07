@@ -6,10 +6,20 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [ 
+    "rewrites": [
       {
         "source": "view/**",
         "destination": "/view.html"
+      },
+      {
+        "source": "/api/initialize-pp",
+        "function": "initialize-pp",
+        "region": "europe-central2"
+      },
+      {
+        "source": "/api/resume-pp",
+        "function": "resume-pp",
+        "region": "europe-central2"
       }
     ]
   }

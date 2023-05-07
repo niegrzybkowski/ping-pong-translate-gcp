@@ -18,6 +18,7 @@
         };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
         import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js';
@@ -101,8 +102,14 @@
 
         fetchRender();
 
-        document.getElementById("Reload").onclick = fetchRender
-        document.getElementById("RequestMore").onclick = fetchRender
+        document.getElementById("Reload").onclick = fetchRender;
+        document.getElementById("RequestMore").onclick = () => {
+            $.post(
+                location.protocol + "//" + location.host + "/api/resume-pp",
+                documentId,
+                (x) => {console.log(x); fetchRender()}
+                )
+        };
         
       </script>
 </head>

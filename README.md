@@ -7,7 +7,7 @@ The phrase is then translated by a machine learning model into another language,
 In the end the user can view how the phrase was distorted by multiple translations.   
 
 ## Screenshots
-!(demo)[docs/pingpong.png]
+![demo](docs/pingpong.png)
 
 ## Technologies used
 * GCP

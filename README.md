@@ -21,7 +21,7 @@ tbd
   * TailwindCSS
 
 ## Hosting
-App is available (while I still fit in the free tier anyway) [here](https://ping-pong-translate.web.app/).
+App is available (while we still fit in the free tier anyway) [here](https://ping-pong-translate.web.app/).
 It might take a bit of time (~1 minute) to warm up from a cold start.
 
 ## Authors
